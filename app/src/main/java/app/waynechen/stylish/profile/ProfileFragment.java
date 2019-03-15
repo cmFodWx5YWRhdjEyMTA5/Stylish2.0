@@ -29,6 +29,8 @@ public class ProfileFragment extends Fragment implements ProfileContract.View {
     private TextView mTextName;
     private TextView mTextInformation;
 
+    private TextView mTextAddress;
+
     public ProfileFragment() {
         // Requires empty public constructor
     }
@@ -66,6 +68,8 @@ public class ProfileFragment extends Fragment implements ProfileContract.View {
         mImageAvatar.setOutlineProvider(new ProfileAvatarOutlineProvider());
         mTextName = root.findViewById(R.id.text_profile_name);
         mTextInformation = root.findViewById(R.id.text_profile_info);
+
+        mTextAddress = root.findViewById(R.id.button_profile_address);
 
         return root;
     }

@@ -34,6 +34,7 @@ public interface ProfileContract {
         boolean isActive();
 
         void showLoginDialogUi();
+
     }
 
     interface Presenter extends BasePresenter {
